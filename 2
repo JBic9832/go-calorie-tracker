@@ -1,0 +1,19 @@
+{{define "index"}}
+
+{{template "head"}}
+
+{{template "header"}}
+<body>
+    <main>
+        <div id="target">
+
+        </div>
+        <div>
+            <button hx-get="/hello" hx-target="#target">Get</button>
+        </div>
+    </main>
+</body>
+
+{{template "footer"}}
+
+{{end}}
